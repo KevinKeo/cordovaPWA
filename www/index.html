@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+                    <img src="img/LogoIMT.png" class="img-responsive center-block" >
+            <div class="row">
+                <div class="col-6 col-offset-6 col-sm-4 col-sm-offset-4 text-center"><h1>CONFERENCE</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-offset-6 col-sm-4 col-sm-offset-4 text-center"><a href="conferences.html" class="btn btn-default btn-block">Voir les conférences</a></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-offset-6 col-sm-4 col-sm-offset-4 text-center"><a href="presentateurs.html" class="btn btn-default btn-block">Voir les présentateurs</a></div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/localforage.js"></script>
+        <script src="app.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script> 
+           $(function(){
+              $('#navbar').load("nav.html");
+           });
+        </script> 
+    </body>
+</html>

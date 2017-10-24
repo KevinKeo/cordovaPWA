@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h1 id="name"></h1></div>
+            </div>            
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1">
+                    <label id="labelContactButton" for="contactButton">Ajouté au Contact</label>
+                    <input type="checkbox" id="contactButton" onclick="onClickContact()">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h2>Biographie</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="shortBio"></div>
+            </div>            
+            <div class="row">
+               <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h2>Ses présentations</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="presentations"></div>
+            </div>
+        </div> 
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/localforage.js"></script>
+        <script src="app.js"></script>
+        <script src="js/sessions.js"></script>
+        <script src="js/speakers.js"></script>
+        <script>renderInfoSpeakerById();</script>
+        <script>contactButton();</script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("nav.html");
+           });
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center"><a id="sessionlink" href="#"><h1 id="title"></h1></a></div>
+            </div>
+            <div class="row"> 
+                    <div class="col-offset-2 col-md-offset-1 col-4 col-md-2 text-center">
+                        <button class="btn btn-default btn-block" onclick="takePicture()">
+                            <img src="img/camera-icon.png" width="100" />
+                        </button>
+                    </div>
+                    <div class="col-4 col-md-2 text-center">
+                        <button class="btn btn-default btn-block" onclick="takePictureFromPhotoLibrary()">
+                            <img src="img/photos-icon.png" width="100" />
+                        </button>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" >
+                    <button  class="btn btn-default btn-block" type="submit" value="Submit" onclick="addNotes()">Enregistrer</button>
+                 </div>  
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center">
+                    <label for="note">Mes notes : </label>
+                    <textarea class="form-control" rows="8" id="note"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div id="images" class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center">
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/localforage.js"></script>
+        <script src="app.js"></script>
+        <script src="js/notes.js"> </script>
+        <script src="js/sessions.js"></script>
+        <script>renderNotesHTML();</script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("nav.html");
+           });
+        </script> 
+    </body>
+</html>

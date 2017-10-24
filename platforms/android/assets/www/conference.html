@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h1 id="title"></h1></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h2>Description</h2></div>
+            </div>            
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="description"></div>
+            </div>            
+                <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="presentateurs"></div>
+            </div>            
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center"><a id="linknotes" href="#" class="btn btn-default btn-block">Mes Notes</a></div>
+            </div>
+        </div>
+        <script src="js/localforage.js"></script>
+        <script src="app.js"></script>
+        <script src="js/sessions.js"></script>
+        <script src="js/speakers.js"></script>
+        <script>renderInfoSessionById();</script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("nav.html");
+           });
+        </script> 
+    </body>
+</html>

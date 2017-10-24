@@ -1,0 +1,23 @@
+{
+"short_name": "Visionneur",
+"name": "Super Conf Visionneur",
+"icons": [
+{
+"src": "img/bookmark48.png",
+"type": "image/png",
+"sizes": "48x48"
+},
+{
+"src": "img/bookmark96.png",
+"type": "image/png",
+"sizes": "96x96"
+},
+{
+"src": "img/bookmark192.png",
+"type": "image/png",
+"sizes": "192x192"
+}
+],
+"start_url": "index.html",
+"display":"standalone"
+}

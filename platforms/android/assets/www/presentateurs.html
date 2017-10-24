@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div id="container" class="row">
+                <ul id="liste"></ul>
+            </div>
+        </div>
+
+        <script src="js/localforage.js"></script>
+        <script src="app.js"></script>
+        <script src="js/speakers.js"></script>
+        <script>getAllSpeakers();</script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("nav.html");
+           });
+        </script> 
+    </body>
+</html>
